@@ -1,0 +1,116 @@
+extends layout/layout
+append config
+  - var pageTitle = 'Home';
+
+block main
+  include includes/header.pug
+  .main-content
+    +b.dc-section_reverse
+      .row
+        .col
+          .row
+            +b.col_half
+              +b.box_md._thm_1
+                +e.content_ai_end
+                  +e.title Электроника
+            +b.col_half
+              +b.box_md._thm_1
+                +e.content_ai_end
+                  +e.title Бытовая техника
+          .row
+            +b.col
+              +b.box_md._thm_1
+                +e.content_ai_end
+                  +e.title Детские товары
+        .col
+          .row
+            +b.col_half._phablet_full
+              +b.box_md._thm_2
+                +e.content_ai_end
+                  +e.title Подарочные наборы
+            +b.col_half._phablet_full
+              +b.box_md._thm_3
+                +e.content_ai_end
+                  +e.title Последний шанс!
+      .row
+        +b.col_w1
+          +b.box_square._thm_4
+            +e.content_pd-pc_lg
+              +e.p.
+                Выберите товар с повышенным кэшбэком
+                Нажмите кнопку «Посмотреть» - перейдите в карточку товара<br>
+                Положите товар в корзину<br>
+                Оформите заказ
+        +b.col_w2
+          +b.box_square._thm_4
+            +e.content_ai_end._pd-mob_sm
+              +e.title_color_1 Кэшбэк 30%
+          +b.box_square._thm_4
+            +e.content_ai_end._pd-mob_sm
+              +e.title_color_1 Успей купить!
+    +b.dc-section_reverse
+      .row
+        .col
+          .row
+            +b.col
+              +b.box_md._thm_5
+                +e.content_ai_end
+                  +e.title Будь первым!
+          .row
+            +b.col_half
+              +b.box_md._thm_5
+                +e.content_ai_end
+                  +e.title Супер цены
+            +b.col_half
+              +b.box_md._thm_6
+                +e.content_ai_end
+                  +e.title Выгодные предложения
+        .col
+          .row
+            +b.col_half._phablet_full
+              +b.box_md._thm_5
+                +e.content_ai_end
+                  +e.title Удивительное рядом
+            +b.col_half._phablet_full
+              +b.box_md._thm_7
+                +e.content_ai_end
+                  +e.title Невероятный гений
+      +b.row_d-phablet
+        +b.col_w1
+          +b.box_square._thm_8
+            +e.content_pd_xl
+              +e.UL.list
+                li
+                  span Тип
+                  span Дрель ударная
+                li
+                  span Бренд
+                  span: a(href="#") Bosch
+                li
+                  span Страна-изготовитель
+                  span Венгрия
+                li
+                  span Макс. мощность, Вт
+                  span 701
+                li
+                  span Питание
+                  span От сети 220В
+                li
+                  span Гарантия
+                  span 2 года
+                li
+                  span Питание
+                  span От сети 220В
+                li
+                  span Упаковка
+                  span Пластиковый кейс
+        +b.col_w2
+          +b.box_square._thm_8
+            +e.content_ai_end._pd-mob_sm
+              +e.title Понятие модернизации понимает механизм власти
+          +b.box_square
+            +e.A.content_ai_end._pd-mob_sm(href="#")
+              +e.IMG.img(src="../img/pic1.jpg" alt="pic1")
+              +e.info-circle: span !
+              +e.title_color_1 Время мыть!
+  include includes/footer.pug

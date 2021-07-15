@@ -1,0 +1,32 @@
+$font1: 'Open Sans', sans-serif;
+$font2: 'Roboto', sans-serif;
+
+$color1: #F1F2F2;
+$color2: #FFC1C1;
+$color3: #85B1F9;
+$color4: #71787F;
+$color5: #FFF48E;
+$color6: #EE6956;
+$color7: #D9EAFF;
+$color8: #C3F3E2;
+
+$default_color: #d3d3d3;
+$primary_color: #007bff;
+$secondary_color: #444;
+
+@function glh($font-size, $line-height) {
+	@return $line-height / $font-size;
+}
+
+
+
+$bp-xsmall: 481px;
+
+@mixin breakpoint($point) {
+  @if $point == phablet {
+    @media (min-width: $bp-xsmall)  { @content ; }
+  }
+  @else if $point == mobileonly {
+    @media (max-width: $bp-xsmall - 1)  { @content ; }
+  }
+}

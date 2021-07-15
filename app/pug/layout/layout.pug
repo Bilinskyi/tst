@@ -1,0 +1,12 @@
+block config
+  - var pageTitle;
+
+doctype html
+include ../bemto-master/bemto.pug
+html(lang="ru")
+  head
+    include ../includes/head.pug
+  body
+    .main-wrap
+      block main
+    //- include ../includes/scripts.pug
